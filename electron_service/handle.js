@@ -30,7 +30,7 @@ router.post("/upload", function (req, res) {
         
     }
     res.json({
-        success:files.length
+        success:true
     })
     // const form = new formidable.IncomingForm()
     // form.parse(req, (err, fields, files) => {

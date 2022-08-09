@@ -6,4 +6,4 @@
 - 暂无修改配置
 - 局域网电脑端传输
 ## 开发技术
-electron + vite react
+electron(构建软件) + vite react (构建ui) + express(本地服务器)
