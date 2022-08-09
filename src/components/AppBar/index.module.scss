@@ -1,0 +1,14 @@
+.bar {
+    -webkit-app-region: drag;
+    height: 49px;
+    color: pink;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.close{
+    right: 8px;
+    top: 4px;
+    position: absolute;
+}

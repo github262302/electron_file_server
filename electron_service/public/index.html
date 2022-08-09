@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button id="upload">上传</button>
+    </body>
+    <script>
+
+           document.getElementById("upload").addEventListener("click",function(){
+               var input= document.createElement("input")
+              
+               input.type="file"
+            input.name="file"
+            input.multiple="multiple"
+            const fd=new FormData()
+            input.addEventListener("change",function(e){
+                fd.append(...e.target.files)
+            })
+               console.log(this.innerHTML="上传中");
+               input.click()
+           })
+    </script>
+</html>

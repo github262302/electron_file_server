@@ -1,0 +1,5 @@
+.buttons{
+  height: 87px;
+  display: flex;
+  justify-content: space-evenly;
+}
