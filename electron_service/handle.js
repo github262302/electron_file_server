@@ -32,18 +32,6 @@ router.post("/upload", function (req, res) {
     res.json({
         success:true
     })
-    // const form = new formidable.IncomingForm()
-    // form.parse(req, (err, fields, files) => {
-    //     if (err != null) {
-    //       console.log(err)
-    //       return res.status(400).json({ message: err.message })
-    //     }
-    //     console.log("files",files);
-    //     // files 对象包含已上载的所有文件。Formidable 将解析每个文件并为您上载到临时文件。
-    //     const [firstFileName] = Object.keys(files)
-    
-    //     res.json({ filename: firstFileName })
-    //   })
     
 });
 

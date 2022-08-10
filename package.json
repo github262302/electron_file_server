@@ -13,7 +13,7 @@
     "electron": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "set NODE_ENV=production && electron-forge make"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",

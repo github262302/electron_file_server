@@ -18,8 +18,12 @@ const createWindow = () => {
 
     // and load the index.html of the app.
     //   mainWindow.loadFile(mainHtml)
-    mainWindow.loadURL("http://127.0.0.1:5173");
-
+   
+    if (process.env.NODE_ENV !== 'production') { 
+        mainWindow.loadFile(mainHtml);
+    } else {
+         mainWindow.loadURL("http://127.0.0.1:5173");
+    }
     // Open the DevTools.
     // mainWindow.webContents.openDevTools();
 };
